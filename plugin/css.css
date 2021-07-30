@@ -3,7 +3,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100vh;
-  background-image: url('../img/sylvesterChen.jpg');
+  background-image: url('/img/sylvesterChen.jpg');
   background-position: center;
   background-size: cover;
   display: flex;
