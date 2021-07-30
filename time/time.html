@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="time.css">
+<script>
+  const nt = new Date();
+  const 
+    ns = nt.getSeconds(),
+    nm = nt.getUTCMinutes(),
+    nh = nt.getHours();
+
+  const
+    ss = ns * 6,
+    sm = nm * 6 + ns * 0.1,
+    sh = null;
+
+    document.write(`
+    <style>
+      @keyframes js_move {
+        from {
+          transform: rotate(${ss}deg);
+        }
+
+        to{
+          transform: rotate(${ss + 360}deg);
+        }
+      }
+      @keyframes jm_move {
+        from {
+          transform: rotate(${sm}deg);
+        }
+      }
+      )
+</script>
+
+<body>
+  <div class="clock">
+    <div class="clock-face">
+      <div class="hand hour-hand"></div>
+      <div class="hand min-hand"></div>
+      <div class="hand second-hand"></div>
+    </div>
+  </div>
+</body>
+
+</html>
